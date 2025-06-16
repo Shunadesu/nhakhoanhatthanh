@@ -31,7 +31,10 @@ const OnlineConsult = () => {
           Nhắn Zalo ngay
         </a>
         <div className="mt-8 text-gray-500 text-sm text-center">
-          Nếu bạn gặp khó khăn khi quét mã, hãy mở ứng dụng Zalo và tìm kiếm số điện thoại trên để kết nối với chúng tôi.
+          Nếu bạn gặp khó khăn khi quét mã, hãy mở ứng dụng Zalo và tìm kiếm số điện thoại <b>090 987 62 87</b> để kết nối với chúng tôi.<br/>
+          Hoặc liên hệ trực tiếp tại: <br/>
+          37A Nguyễn Văn Đậu, Quận Bình Thạnh, TP. Hồ Chí Minh<br/>
+          Email: Thanhtu231082@gmail.com
         </div>
       </div>
     </div>

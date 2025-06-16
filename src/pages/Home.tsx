@@ -5,6 +5,7 @@ import { Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import Header from '../components/Header'
+import FeaturedServices from '../components/FeaturedServices'
 
 import { images } from '../assets/images'
 
@@ -234,7 +235,7 @@ const Home = () => {
     <div className="bg-white">
       <Header />
       {/* Add padding-top to account for fixed header */}
-      <div className="pt-[20px]">
+      <div>
         {/* Hero section */}
         <div className="relative isolate overflow-hidden bg-gradient-to-b from-primary-50 to-white">
           <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
@@ -306,7 +307,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-
+        
         {/* Features section */}
         <div className="bg-white py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -432,6 +433,7 @@ const Home = () => {
           </div>
         </div>
 
+
         {/* Why choose us section */}
         <div className="bg-white py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -496,7 +498,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-
+        <FeaturedServices />
         {/* Latest news section */}
         <div className="bg-gray-50 py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">

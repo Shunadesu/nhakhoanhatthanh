@@ -1,13 +1,12 @@
-import React from 'react';
-// import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   return (
     <div className="bg-white min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-      {/* <Helmet>
+      <Helmet>
         <title>Giới thiệu | Nha khoa Nhật Thanh</title>
         <meta name="description" content="Giới thiệu về Nha khoa Nhật Thanh - Đội ngũ bác sĩ chuyên môn cao, trang thiết bị hiện đại, sứ mệnh chăm sóc nụ cười Việt." />
-      </Helmet> */}
+      </Helmet>
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-primary-700 mb-6 text-center">Giới thiệu về Nha khoa Nhật Thanh</h1>
         <p className="text-lg text-gray-600 mb-8 text-center">

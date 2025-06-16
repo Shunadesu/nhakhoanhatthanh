@@ -91,6 +91,9 @@ const NewsDetail = () => {
           {post.content}
         </div>
         <Link to="/news" className="inline-block text-primary-600 font-semibold hover:underline">← Quay lại Tin tức & Blog</Link>
+        <div className="mt-8 text-sm text-gray-400 text-center">
+          Liên hệ: 37A Nguyễn Văn Đậu, Quận Bình Thạnh, TP. Hồ Chí Minh | 090 987 62 87 | Thanhtu231082@gmail.com
+        </div>
       </div>
       {/* Schema.org structured data for SEO */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{

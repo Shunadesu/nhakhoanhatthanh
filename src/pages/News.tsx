@@ -1,84 +1,103 @@
 import React from 'react';
-// Nếu dùng react-helmet-async hoặc react-helmet để SEO tốt hơn:
-// import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const blogPosts = [
   {
     slug: 'quy-trinh-kham-va-dieu-tri-tai-nha-khoa-nhat-thanh',
     title: 'Quy trình khám và điều trị tại Nha khoa Nhật Thanh',
     description: 'Tìm hiểu quy trình khám và điều trị chuẩn quốc tế tại Nha khoa Nhật Thanh, giúp bạn an tâm khi trải nghiệm dịch vụ.',
-    content: (
-      <>
-        <p>Chúng tôi luôn đặt sự an toàn và hiệu quả lên hàng đầu, tuân thủ quy trình chuẩn quốc tế để mang lại trải nghiệm tốt nhất cho khách hàng:</p>
-        <ol className="list-decimal ml-6 my-4 space-y-1">
-          <li><b>Khám tổng quát:</b> Bác sĩ kiểm tra tổng thể tình trạng răng miệng, phát hiện các vấn đề tiềm ẩn.</li>
-          <li><b>Chụp X-quang (nếu cần):</b> Hỗ trợ chẩn đoán chính xác các bệnh lý sâu bên trong răng, xương hàm.</li>
-          <li><b>Tư vấn điều trị:</b> Bác sĩ giải thích tình trạng, đề xuất phương án điều trị phù hợp và minh bạch về chi phí.</li>
-          <li><b>Thực hiện điều trị:</b> Quy trình điều trị được thực hiện bởi đội ngũ bác sĩ chuyên môn cao, trang thiết bị hiện đại.</li>
-          <li><b>Hướng dẫn chăm sóc sau điều trị:</b> Khách hàng được hướng dẫn chi tiết cách chăm sóc răng miệng để duy trì kết quả lâu dài.</li>
-        </ol>
-        <p>Chúng tôi cam kết đồng hành cùng bạn trên hành trình chăm sóc nụ cười khỏe đẹp!</p>
-      </>
-    ),
+    image: '/news/news-1.jpg',
     date: '2024-04-01',
   },
   {
     slug: 'chi-phi-dieu-tri-nha-khoa-va-bao-hiem-y-te',
     title: 'Chi phí điều trị nha khoa và bảo hiểm y tế: Những điều bạn cần biết',
     description: 'Giải đáp thắc mắc về chi phí điều trị nha khoa và quyền lợi bảo hiểm y tế tại Nha khoa Nhật Thanh.',
-    content: (
-      <>
-        <p>Nhiều khách hàng thắc mắc: "Chi phí điều trị nha khoa có được bảo hiểm y tế chi trả không?" Dưới đây là giải đáp từ Nha khoa Nhật Thanh:</p>
-        <ul className="list-disc ml-6 my-4 space-y-1">
-          <li><b>Dịch vụ được bảo hiểm chi trả:</b> Một số dịch vụ nha khoa cơ bản như nhổ răng, trám răng, điều trị viêm lợi… có thể được bảo hiểm y tế hỗ trợ chi phí.</li>
-          <li><b>Dịch vụ không được bảo hiểm chi trả:</b> Các dịch vụ thẩm mỹ (tẩy trắng, bọc răng sứ, niềng răng, cấy ghép implant…) và các dịch vụ nâng cao thường không nằm trong danh mục bảo hiểm.</li>
-          <li><b>Tư vấn minh bạch:</b> Trước khi điều trị, chúng tôi sẽ tư vấn chi tiết về chi phí, quyền lợi bảo hiểm (nếu có) để khách hàng chủ động tài chính.</li>
-        </ul>
-        <p>Hãy liên hệ với chúng tôi để được tư vấn cụ thể về từng trường hợp!</p>
-      </>
-    ),
+    image: '/news/news-2.jpg',
     date: '2024-04-02',
   },
   {
     slug: 'thoi-gian-dieu-tri-nha-khoa-phu-thuoc-vao-nhung-yeu-to-nao',
     title: 'Thời gian điều trị nha khoa: Phụ thuộc vào những yếu tố nào?',
     description: 'Tìm hiểu các yếu tố ảnh hưởng đến thời gian điều trị nha khoa và cách tối ưu quá trình điều trị tại Nha khoa Nhật Thanh.',
-    content: (
-      <>
-        <p>Thời gian điều trị nha khoa là mối quan tâm của nhiều khách hàng. Tại Nha khoa Nhật Thanh, thời gian điều trị sẽ được bác sĩ thông báo cụ thể sau khi thăm khám, dựa trên các yếu tố:</p>
-        <ul className="list-disc ml-6 my-4 space-y-1">
-          <li><b>Loại dịch vụ:</b> Mỗi dịch vụ có thời gian thực hiện khác nhau. Ví dụ: trám răng chỉ mất 30 phút, trong khi niềng răng có thể kéo dài 1-2 năm.</li>
-          <li><b>Tình trạng răng miệng:</b> Nếu răng miệng có nhiều vấn đề, cần điều trị nhiều lần hoặc kết hợp nhiều phương pháp, thời gian sẽ lâu hơn.</li>
-          <li><b>Sự hợp tác của khách hàng:</b> Việc tuân thủ hướng dẫn chăm sóc, tái khám đúng lịch sẽ giúp rút ngắn thời gian điều trị.</li>
-        </ul>
-        <p>Chúng tôi luôn thông báo rõ ràng thời gian dự kiến và đồng hành cùng bạn trong suốt quá trình điều trị!</p>
-      </>
-    ),
+    image: '/news/news-3.jpg',
     date: '2024-04-03',
   },
+  {
+    slug: 'loi-ich-kham-rang-dinh-ky',
+    title: 'Lợi ích của việc khám răng định kỳ',
+    description: 'Khám răng định kỳ giúp phát hiện sớm các vấn đề và bảo vệ sức khỏe răng miệng lâu dài.',
+    image: '/news/news-4.jpg',
+    date: '2024-04-04',
+  },
+  {
+    slug: 'cong-nghe-moi-trong-nha-khoa',
+    title: 'Công nghệ mới trong nha khoa',
+    description: 'Khám phá các công nghệ hiện đại đang được ứng dụng tại Nha khoa Nhật Thanh.',
+    image: '/news/news-5.jpg',
+    date: '2024-04-05',
+  },
+  {
+    slug: 'huong-dan-cham-soc-rang-sau-dieu-tri',
+    title: 'Hướng dẫn chăm sóc răng sau điều trị',
+    description: 'Những lưu ý quan trọng giúp bạn giữ gìn kết quả điều trị nha khoa lâu dài.',
+    image: '/news/news-6.jpg',
+    date: '2024-04-06',
+  },
+  {
+    slug: 'dich-vu-tay-trang-rang-an-toan',
+    title: 'Dịch vụ tẩy trắng răng an toàn',
+    description: 'Tìm hiểu quy trình và lợi ích của tẩy trắng răng tại Nha khoa Nhật Thanh.',
+    image: '/news/news-7.jpg',
+    date: '2024-04-07',
+  },
+  {
+    slug: 'nhung-dieu-can-biet-ve-nieng-rang',
+    title: 'Những điều cần biết về niềng răng',
+    description: 'Giải đáp các thắc mắc thường gặp về niềng răng thẩm mỹ.',
+    image: '/news/news-8.jpg',
+    date: '2024-04-08',
+  },
+  // Có thể thêm nhiều bài hơn nếu muốn
 ];
 
 const News = () => {
   return (
     <div className="bg-white min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-      {/* <Helmet>
+      <Helmet>
         <title>Tin tức & Blog | Nha khoa Nhật Thanh</title>
         <meta name="description" content="Tổng hợp các bài viết, tin tức, chia sẻ kinh nghiệm chăm sóc răng miệng từ Nha khoa Nhật Thanh." />
         <meta property="og:title" content="Tin tức & Blog | Nha khoa Nhật Thanh" />
         <meta property="og:description" content="Tổng hợp các bài viết, tin tức, chia sẻ kinh nghiệm chăm sóc răng miệng từ Nha khoa Nhật Thanh." />
         <meta property="og:type" content="website" />
-      </Helmet> */}
-      <div className="max-w-3xl mx-auto">
+      </Helmet>
+      <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold text-primary-700 mb-6 text-center">Tin tức & Blog</h1>
-        <p className="text-lg text-gray-600 mb-10 text-center">Tổng hợp các bài viết, tin tức, chia sẻ kinh nghiệm chăm sóc răng miệng từ Nha khoa Nhật Thanh.</p>
-        <div className="space-y-12">
+        <p className="text-lg text-gray-600 mb-10 text-center">
+          Tổng hợp các bài viết, tin tức, chia sẻ kinh nghiệm chăm sóc răng miệng từ Nha khoa Nhật Thanh.<br/>
+          <span className="block mt-2 text-sm text-gray-400">Liên hệ: 37A Nguyễn Văn Đậu, Quận Bình Thạnh, TP. Hồ Chí Minh | 090 987 62 87 | Thanhtu231082@gmail.com</span>
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
-            <article key={post.slug} className="bg-white rounded-2xl shadow-lg p-8 border border-primary-100 hover:shadow-2xl transition-shadow" itemScope itemType="https://schema.org/BlogPosting">
-              <meta itemProp="datePublished" content={post.date} />
-              <h2 className="text-2xl font-bold text-primary-700 mb-2" itemProp="headline">{post.title}</h2>
-              <p className="text-gray-500 mb-4" itemProp="description">{post.description}</p>
-              <div className="prose prose-blue max-w-none text-gray-800" itemProp="articleBody">
-                {post.content}
+            <article key={post.slug} className="bg-white rounded-2xl shadow-lg border border-primary-100 hover:shadow-2xl transition-shadow flex flex-col">
+              <Link to={`/news/${post.slug}`} className="block overflow-hidden rounded-t-2xl">
+                <img src={post.image} alt={post.title} className="w-full h-48 object-cover object-center transition-transform duration-300 hover:scale-105" loading="lazy" />
+              </Link>
+              <div className="flex-1 flex flex-col p-6">
+                <div className="flex items-center text-xs text-primary-600 mb-2">
+                  <span>{new Date(post.date).toLocaleDateString('vi-VN')}</span>
+                </div>
+                <h2 className="text-xl font-bold text-primary-700 mb-2">
+                  <Link to={`/news/${post.slug}`} className="hover:underline">{post.title}</Link>
+                </h2>
+                <p className="text-gray-500 mb-4 flex-1">{post.description}</p>
+                <Link
+                  to={`/news/${post.slug}`}
+                  className="inline-block text-primary-600 font-semibold hover:underline mt-auto"
+                >
+                  Đọc chi tiết →
+                </Link>
               </div>
             </article>
           ))}
@@ -96,7 +115,8 @@ const News = () => {
             'headline': post.title,
             'datePublished': post.date,
             'description': post.description,
-            'url': `/news/${post.slug}`
+            'url': `/news/${post.slug}`,
+            'image': post.image
           }))
         })
       }} />

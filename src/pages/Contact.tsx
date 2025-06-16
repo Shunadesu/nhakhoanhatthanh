@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { MapPinIcon, PhoneIcon, EnvelopeIcon, ClockIcon } from '@heroicons/react/24/outline'
 
 const contactInfo = {
-  address: '123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh',
-  phone: '(028) 1234 5678',
-  email: 'info@dentalclinic.com',
+  address: '37A Nguyễn Văn Đậu, Quận Bình Thạnh, TP. Hồ Chí Minh',
+  phone: '090 987 62 87',
+  email: 'Thanhtu231082@gmail.com',
   hours: [
     'Thứ 2 - Thứ 6: 8:00 - 20:00',
     'Thứ 7: 8:00 - 17:00',
@@ -79,7 +79,7 @@ export default function Contact() {
                   <PhoneIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
                 </dt>
                 <dd>
-                  <a className="hover:text-gray-900" href={`tel:${contactInfo.phone}`}>
+                  <a className="hover:text-gray-900" href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}>
                     {contactInfo.phone}
                   </a>
                 </dd>
