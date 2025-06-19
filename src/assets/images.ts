@@ -14,18 +14,29 @@ import customer11 from './img/customer/customer-11.jpg'
 import customer12 from './img/customer/customer-12.jpg'
 import customerVip from './img/customer/customer-vip.jpg'
 
+import feedbackThanks from './img/common/img-fb-txt.png'
+
+// Doctor
+import doctor1 from './img/doctor/Doctor_nah.png'
+import doctor2 from './img/doctor/Doctor_ThanhTu.png'
+import doctor3 from './img/doctor/Doctor_xinhdep.png'
+import doctor4 from './img/doctor/Doctor_xinhdep-1.png'
+import doctor5 from './img/doctor/Doctor_xinhdep-2.png'
 
 // Import tất cả ảnh trong dự án
 export const images = {
   // Hero image
   nhakhoanhatthanh,
-  
+  common: {
+    feedbackThanks,
+  },
   // Doctor images
   doctors: {
-    doctor1: '/doctors/doctor-1.jpg',
-    doctor2: '/doctors/doctor-2.jpg',
-    doctor3: '/doctors/doctor-3.jpg',
-    doctor4: '/doctors/doctor-4.jpg',
+    doctor1,
+    doctor2,
+    doctor3,
+    doctor4,
+    doctor5,
   },
   
   // Customer images

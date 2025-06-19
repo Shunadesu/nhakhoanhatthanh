@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -17,6 +17,7 @@ export default function FeaturedServices() {
           centeredSlides={true}
           slidesPerView={3}
           spaceBetween={32}
+          initialSlide={Math.floor(services.length / 2)}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -24,8 +25,9 @@ export default function FeaturedServices() {
             modifier: 1.5,
             slideShadows: false,
           }}
-          pagination={{ clickable: true }}
-          modules={[EffectCoverflow, Pagination]}
+          loop={true}
+          
+          modules={[EffectCoverflow]}
           className="w-full"
           breakpoints={{
             320: { slidesPerView: 1 },

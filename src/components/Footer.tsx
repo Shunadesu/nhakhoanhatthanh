@@ -19,14 +19,8 @@ const social = [
 const Footer = () => {
   return (
     <footer className="relative bg-gradient-to-tr from-primary-700 via-primary-600 to-blue-500 text-white">
-      {/* Sóng trang trí */}
-      <div className="absolute -top-8 left-0 w-full overflow-hidden leading-none rotate-180">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-8">
-          <path d="M0,0V46.29c47.29,22,104.09,29,158,17.39C267.09,44.8,327.09,0,385,0s118,44.8,177,63.68C627.09,82.56,687.09,63.68,745,46.29c55.91-16.6,112.71-9.6,158,17.39V0Z" opacity=".25" className="fill-white" />
-          <path d="M0,0V15.81C47.29,37.8,104.09,44.8,158,33.19C267.09,10.8,327.09,0,385,0s118,10.8,177,18.68C627.09,26.56,687.09,18.68,745,11.29c55.91-7.6,112.71-0.6,158,17.39V0Z" opacity=".5" className="fill-white" />
-          <path d="M0,0V5.81C47.29,27.8,104.09,34.8,158,23.19C267.09,0.8,327.09,0,385,0s118,0.8,177,8.68C627.09,16.56,687.09,8.68,745,1.29c55.91-7.6,112.71-0.6,158,17.39V0Z" className="fill-white" />
-        </svg>
-      </div>
+     
+     
       <div className="relative z-10 container mx-auto py-14 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Logo & slogan */}

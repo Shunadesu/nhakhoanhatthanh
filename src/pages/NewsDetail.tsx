@@ -1,6 +1,6 @@
-import React from 'react';
+
 import { useParams, Link } from 'react-router-dom';
-// import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 
 const blogPosts = [
   {
@@ -75,10 +75,10 @@ const NewsDetail = () => {
 
   return (
     <div className="bg-white min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-      {/* <Helmet>
+      <Helmet>
         <title>{post.title} | Nha khoa Nhật Thanh</title>
         <meta name="description" content={post.description} />
-      </Helmet> */}
+      </Helmet>
       <div className="max-w-3xl mx-auto">
         <nav className="mb-6 text-sm text-gray-500">
           <Link to="/news" className="hover:underline text-primary-600">Tin tức & Blog</Link>

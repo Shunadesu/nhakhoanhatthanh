@@ -31,35 +31,35 @@ const Header = () => {
     }`}>
       {/* Top bar */}
       <div className="bg-primary-600 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-[1440px] px-4">
           <div className="flex h-10 items-center justify-between">
             <div className="flex items-center space-x-4">
-              <a href="tel:02812345678" className="flex items-center text-sm text-white hover:text-yellow-300">
+              <a href="tel:0909876287" className="flex items-center text-sm text-white hover:text-yellow-300">
                 <PhoneIcon className="h-4 w-4 mr-1 text-white" />
-                028 1234 5678
+                090 987 62 87
               </a>
               <span className="hidden sm:block text-white">|</span>
-              <a href="mailto:info@nhakhoanhatthanh.com" className="hidden sm:flex items-center text-sm text-white hover:text-yellow-300">
-                info@nhakhoanhatthanh.com
-              </a>
+              <a href="mailto:nhakhoanhatthanh1806@gmail.com" className="hidden sm:flex items-center text-sm text-white hover:text-yellow-300">
+                  nhakhoanhatthanh1806@gmail.com
+                </a>
             </div>
             <div className="flex items-center space-x-4">
-              <a href="#" className="text-sm text-white hover:text-yellow-300">Đặt lịch hẹn</a>
+              <Link to="/appointment" className="text-sm text-white hover:text-yellow-300">Đặt lịch hẹn</Link>
               <span className="hidden sm:block text-white">|</span>
-              <a href="#" className="hidden sm:block text-sm text-white hover:text-yellow-300">Tư vấn trực tuyến</a>
+              <Link to="/online-consult" className="hidden sm:block text-sm text-white hover:text-yellow-300">Tư vấn trực tuyến</Link>
             </div>
           </div>
         </div>
       </div>
 
       {/* Main navigation */}
-      <nav className="mx-auto max-w-[1440px]">
+      <nav className="mx-auto max-w-[1440px] px-4">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
              
-              <div className="ml-3 hidden sm:block">
+              <div className="block">
                 <div className="text-xl font-bold text-gray-900">Nha khoa Nhật Thanh</div>
                 <div className="text-sm text-primary-600">Nụ cười của bạn là niềm vui của chúng tôi</div>
               </div>

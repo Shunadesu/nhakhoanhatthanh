@@ -5,6 +5,10 @@ import { MainLayout } from './layouts'
 
 // Pages
 import { Home, Services, Doctors, Contact, Appointment, News, OnlineConsult, NewsDetail, About } from './pages'
+import General from './pages/services/General'
+import Cosmetic from './pages/services/Cosmetic'
+import Implant from './pages/services/Implant'
+import Orthodontics from './pages/services/Orthodontics'
 
 function App() {
   return (
@@ -14,6 +18,10 @@ function App() {
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />} />
             <Route path="services" element={<Services />} />
+            <Route path="services/general" element={<General />} />
+            <Route path="services/cosmetic" element={<Cosmetic />} />
+            <Route path="services/implant" element={<Implant />} />
+            <Route path="services/orthodontics" element={<Orthodontics />} />
             <Route path="doctors" element={<Doctors />} />
             <Route path="contact" element={<Contact />} />
             <Route path="appointment" element={<Appointment />} />

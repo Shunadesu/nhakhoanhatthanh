@@ -1,0 +1,96 @@
+import { images } from "../assets/images";
+// Dữ liệu mẫu cho slider khách hàng
+export const testimonials = [
+    {
+      id: 1,
+      name: 'Chị Nguyễn Thị Hương',
+      role: 'Khách hàng thân thiết',
+      content: 'Tôi đã điều trị tại Nha khoa Nhật Thanh được 2 năm. Đội ngũ bác sĩ rất chuyên nghiệp, tận tâm. Kết quả điều trị vượt ngoài mong đợi!',
+      image: images.customers.customer1,
+    },
+    {
+      id: 2,
+      name: 'Anh Trần Văn Minh',
+      role: 'Khách hàng mới',
+      content: 'Lần đầu đến đây, tôi rất ấn tượng với cơ sở vật chất hiện đại và thái độ phục vụ chu đáo. Bác sĩ tư vấn rất kỹ lưỡng và nhiệt tình.',
+      image: images.customers.customer2,
+    },
+    {
+      id: 3,
+      name: 'Chị Lê Thị Mai',
+      role: 'Khách hàng thân thiết',
+      content: 'Sau khi bọc răng sứ tại đây, tôi tự tin hơn hẳn với nụ cười của mình. Cảm ơn đội ngũ Nha khoa Nhật Thanh!',
+      image: images.customers.customer3,
+    },
+    {
+      id: 4,
+      name: 'Chị Nguyễn Thị Hương',
+      role: 'Khách hàng thân thiết',
+      content: 'Tôi đã điều trị tại Nha khoa Nhật Thanh được 2 năm. Đội ngũ bác sĩ rất chuyên nghiệp, tận tâm. Kết quả điều trị vượt ngoài mong đợi!',
+      image: images.customers.customer4,
+    },
+    {
+      id: 5,
+      name: 'Chị Nguyễn Thị Hương',
+      role: 'Khách hàng thân thiết',
+      content: 'Tôi đã điều trị tại Nha khoa Nhật Thanh được 2 năm. Đội ngũ bác sĩ rất chuyên nghiệp, tận tâm. Kết quả điều trị vượt ngoài mong đợi!',
+      image: images.customers.customer5,
+    },  
+    {
+      id: 6,
+      name: 'Chị Nguyễn Thị Hương',
+      role: 'Khách hàng thân thiết',
+      content: 'Tôi đã điều trị tại Nha khoa Nhật Thanh được 2 năm. Đội ngũ bác sĩ rất chuyên nghiệp, tận tâm. Kết quả điều trị vượt ngoài mong đợi!',
+      image: images.customers.customer6,
+    },
+    {
+      id: 7,
+      name: 'Chị Nguyễn Thị Hương',
+      role: 'Khách hàng thân thiết',
+      content: 'Tôi đã điều trị tại Nha khoa Nhật Thanh được 2 năm. Đội ngũ bác sĩ rất chuyên nghiệp, tận tâm. Kết quả điều trị vượt ngoài mong đợi!',
+      image: images.customers.customer7,
+    },
+    {
+      id: 8,
+      name: 'Chị Nguyễn Thị Hương',
+      role: 'Khách hàng thân thiết',
+      content: 'Tôi đã điều trị tại Nha khoa Nhật Thanh được 2 năm. Đội ngũ bác sĩ rất chuyên nghiệp, tận tâm. Kết quả điều trị vượt ngoài mong đợi!',
+      image: images.customers.customer8,
+    },
+    {
+      id: 9,
+      name: 'Chị Nguyễn Thị Hương',
+      role: 'Khách hàng thân thiết',
+      content: 'Tôi đã điều trị tại Nha khoa Nhật Thanh được 2 năm. Đội ngũ bác sĩ rất chuyên nghiệp, tận tâm. Kết quả điều trị vượt ngoài mong đợi!',
+      image: images.customers.customer9,
+    },
+    {
+      id: 10,
+      name: 'Chị Nguyễn Thị Hương',
+      role: 'Khách hàng thân thiết',
+      content: 'Tôi đã điều trị tại Nha khoa Nhật Thanh được 2 năm. Đội ngũ bác sĩ rất chuyên nghiệp, tận tâm. Kết quả điều trị vượt ngoài mong đợi!',
+      image: images.customers.customer10,
+    },
+    {
+      id: 11,
+      name: 'Chị Nguyễn Thị Hương',
+      role: 'Khách hàng thân thiết',
+      content: 'Tôi đã điều trị tại Nha khoa Nhật Thanh được 2 năm. Đội ngũ bác sĩ rất chuyên nghiệp, tận tâm. Kết quả điều trị vượt ngoài mong đợi!',
+      image: images.customers.customer11,
+    },
+    {
+      id: 12,
+      name: 'Chị Nguyễn Thị Hương',
+      role: 'Khách hàng thân thiết',
+      content: 'Tôi đã điều trị tại Nha khoa Nhật Thanh được 2 năm. Đội ngũ bác sĩ rất chuyên nghiệp, tận tâm. Kết quả điều trị vượt ngoài mong đợi!',
+      image: images.customers.customer12,
+    },
+    {
+      id: 13,
+      name: 'Chị Nguyễn Thị Hương',
+      role: 'Khách hàng thân thiết',
+      content: 'Tôi đã điều trị tại Nha khoa Nhật Thanh được 2 năm. Đội ngũ bác sĩ rất chuyên nghiệp, tận tâm. Kết quả điều trị vượt ngoài mong đợi!',
+      image: images.customers.customerVip,
+    },
+  
+  ]

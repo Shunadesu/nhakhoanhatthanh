@@ -1,5 +1,3 @@
-import React from 'react';
-
 const zaloNumber = '0901 234 567';
 const zaloQR = '/zalo-qr.png'; // Đặt file ảnh QR code Zalo vào public hoặc assets
 
