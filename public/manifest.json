@@ -1,0 +1,27 @@
+{
+  "name": "Nha Khoa Nhật Thanh",
+  "short_name": "Nha Khoa Nhật Thanh",
+  "description": "Nha khoa uy tín tại TP.HCM với đội ngũ bác sĩ chuyên môn cao",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/src/assets/img/logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/src/assets/img/logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["medical", "health"],
+  "lang": "vi",
+  "dir": "ltr"
+} 

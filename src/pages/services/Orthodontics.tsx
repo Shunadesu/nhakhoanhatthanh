@@ -8,6 +8,7 @@ import {
   ArrowLeftIcon,
   StarIcon
 } from '@heroicons/react/24/solid'
+import { SEO } from '../../components'
 
 const Orthodontics = () => {
   const treatments = [
@@ -93,6 +94,10 @@ const Orthodontics = () => {
 
   return (
     <div className="bg-white">
+      <SEO
+        title="Chỉnh nha | Nha khoa Nhật Thanh"
+        description="Chỉnh nha với các phương pháp hiện đại, đảm bảo nụ cười đẹp và hoàn hảo."
+      />
       {/* Header */}
       <div className="bg-gradient-to-b from-primary-50 to-white">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaRegClock, FaTooth, FaUserMd, FaComments } from 'react-icons/fa';
 import { SiZalo } from 'react-icons/si';
+import { images } from '../assets/images';
 
 const navigation = [
   { name: 'Trang chủ', href: '/', icon: <FaTooth className="inline mr-2 text-primary-400" /> },
@@ -12,20 +13,20 @@ const navigation = [
 ];
 
 const social = [
-  { name: 'Facebook', href: 'https://facebook.com', icon: <FaFacebookF /> },
-  { name: 'Zalo', href: 'https://zalo.me/0901234567', icon: <SiZalo /> },
+  { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=100025979333223', icon: <FaFacebookF /> },
+  { name: 'Zalo', href: 'https://zalo.me/0909876287', icon: <SiZalo /> },
 ];
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-tr from-primary-700 via-primary-600 to-blue-500 text-white">
+    <footer className="relative bg-gradient-to-br from-primary-400 via-primary-600 to-blue-500 text-white">
      
      
       <div className="relative z-10 container mx-auto py-14 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Logo & slogan */}
           <div className="flex flex-col items-center md:items-start">
-            <img src="/logo.png" alt="Nha khoa Nhật Thanh" className="h-16 w-16 mb-3 drop-shadow-lg" />
+            <img src={images.logoWhite} alt="Nha khoa Nhật Thanh" className="h-16 w-16 mb-3 drop-shadow-lg" />
             <span className="text-2xl font-extrabold tracking-wide mb-2">Nha khoa Nhật Thanh</span>
             <p className="text-blue-100 mb-2 text-center md:text-left">
               Chăm sóc nụ cười của bạn là sứ mệnh của chúng tôi

@@ -13,6 +13,9 @@ import customer10 from './img/customer/customer-10.jpg'
 import customer11 from './img/customer/customer-11.jpg'
 import customer12 from './img/customer/customer-12.jpg'
 import customerVip from './img/customer/customer-vip.jpg'
+import logo from './img/logo.jpeg'
+import logoWhite from './img/logo-removebg-preview.png'
+import favicon from './img/logo.jpeg'
 
 import feedbackThanks from './img/common/img-fb-txt.png'
 
@@ -22,6 +25,32 @@ import doctor2 from './img/doctor/Doctor_ThanhTu.png'
 import doctor3 from './img/doctor/Doctor_xinhdep.png'
 import doctor4 from './img/doctor/Doctor_xinhdep-1.png'
 import doctor5 from './img/doctor/Doctor_xinhdep-2.png'
+import zaloQR from './img/zalo/Zalo.jpg'
+
+//service
+import khamvatuvan from './img/services/khamvatuvan.jpg'
+import caovoirang from './img/services/caovoirang.jpg'
+import tramrang from './img/services/tramrangthammy.png'
+import taytrangrang from './img/services/taytrangrang.jpg'
+import cayghepimplant from './img/services/cayghepimplant.jpg'
+import chinhnha from './img/services/chinhnha.jpeg'
+import nhorangkhon from './img/services/nhorangkhon.jpeg'
+import dieutrituyrang from './img/services/dieutrituyrang.jpeg'
+import dansuveneer from './img/services/dansuveneer.jpeg'
+import viemnhachu from './img/services/viemnhachu.jpeg'
+import conebean from './img/services/conebean.jpg'
+import implantThuySi from './img/services/implantThuySi.webp'
+import phauthuatitxamlan from './img/services/phauthuatitxamlan.jpg'
+import taytrangrang1 from './img/services/taytrangrangco.jpg'
+import bocrangsuco from './img/services/bocrangsuco.jpg'
+
+// gallery
+import phongkhamhiendai from './img/gallery/phongkhamhiendai.jpg'
+import trangthietbitientien from './img/gallery/trangthietbitientien.webp'
+import quytrinhdieutri from './img/gallery/quytrinhdieutri.webp'
+import doinguchuyenmon from './img/gallery/doinguchuyenmon.jpg'
+import ketquadiutri from './img/gallery/ketquadieutri.jpg'
+import khonggiancho from './img/gallery/khonggiancho.jpeg'
 
 // Import tất cả ảnh trong dự án
 export const images = {
@@ -29,6 +58,9 @@ export const images = {
   nhakhoanhatthanh,
   common: {
     feedbackThanks,
+  },
+  zalo:{
+    zaloQR,
   },
   // Doctor images
   doctors: {
@@ -58,17 +90,34 @@ export const images = {
   
   // Service images (nếu có)
   services: {
-    general: '/services/general-dentistry.jpg',
-    cosmetic: '/services/cosmetic-dentistry.jpg',
-    orthodontics: '/services/orthodontics.jpg',
-    surgery: '/services/oral-surgery.jpg',
-    implant: '/services/dental-implant.jpg',
-    whitening: '/services/teeth-whitening.jpg',
+    khamvatuvan,
+    caovoirang,
+    tramrang,
+    taytrangrang,
+    cayghepimplant,
+    chinhnha,
+    nhorangkhon,
+    dieutrituyrang,
+    dansuveneer,
+    viemnhachu,
+    taytrangrang1,
+    bocrangsuco,
+    conebean,
+    implantThuySi,
+    phauthuatitxamlan,
   },
-  
+  gallery: {
+    phongkhamhiendai,
+    trangthietbitientien,
+    quytrinhdieutri,
+    doinguchuyenmon,
+    ketquadiutri,
+    khonggiancho,
+  },
   // Logo và icons
-  logo: '/logo.png',
-  favicon: '/favicon.ico',
+  logo,
+  logoWhite,
+  favicon,
   
   // Background images
   backgrounds: {

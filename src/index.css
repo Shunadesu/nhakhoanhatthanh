@@ -28,7 +28,9 @@
   .btn-secondary {
     @apply bg-white text-gray-900 border border-gray-300 hover:bg-gray-50;
   }
-}@layer utilities {
+}
+
+@layer utilities {
   .shiny-text {
     background-image: linear-gradient(
       90deg,
@@ -42,7 +44,7 @@
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-    animation: shine 3s linear infinite;
+    animation: shine 10s linear infinite;
   }
 
   @keyframes shine {
@@ -85,7 +87,6 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  display: flex;
   min-height: 100vh;
   width: 100%;
 }
@@ -124,5 +125,454 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+/* Enhanced Prose Styling for NewsDetail */
+.enhanced-prose h1 {
+  @apply text-3xl font-bold text-gray-900 mb-6 mt-8 first:mt-0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 2s ease-in-out infinite alternate;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.enhanced-prose h2 {
+  @apply text-2xl font-semibold text-gray-800 mb-4 mt-8 first:mt-0;
+  position: relative;
+  padding-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose h2:hover {
+  transform: translateX(5px);
+  color: #1e40af;
+}
+
+.enhanced-prose h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.enhanced-prose h2:hover::before {
+  width: 8px;
+}
+
+.enhanced-prose h3 {
+  @apply text-xl font-semibold text-gray-800 mb-3 mt-6;
+  color: #1e40af;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.enhanced-prose h3::before {
+  content: '▶';
+  position: absolute;
+  left: -0.5rem;
+  color: #3b82f6;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose h3:hover::before {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+.enhanced-prose p {
+  @apply text-gray-700 leading-7 mb-4;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose p:hover {
+  transform: translateX(2px);
+  color: #374151;
+}
+
+.enhanced-prose ul {
+  @apply space-y-2 mb-6;
+}
+
+.enhanced-prose ul li {
+  @apply relative pl-6;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose ul li:hover {
+  transform: translateX(3px);
+  color: #1f2937;
+}
+
+.enhanced-prose ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #10b981;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose ul li:hover::before {
+  transform: scale(1.2);
+  color: #059669;
+}
+
+.enhanced-prose ol {
+  @apply space-y-2 mb-6;
+  counter-reset: item;
+}
+
+.enhanced-prose ol li {
+  @apply relative pl-8;
+  counter-increment: item;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose ol li:hover {
+  transform: translateX(3px);
+  color: #1f2937;
+}
+
+.enhanced-prose ol li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose ol li:hover::before {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+}
+
+.enhanced-prose blockquote {
+  @apply border-l-4 border-primary-500 pl-6 py-4 my-6;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 0 8px 8px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose blockquote:hover {
+  transform: translateX(5px);
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.2);
+}
+
+.enhanced-prose blockquote::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 4rem;
+  color: #3b82f6;
+  opacity: 0.3;
+  font-family: serif;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose blockquote:hover::before {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.enhanced-prose strong {
+  @apply font-bold text-gray-900;
+  color: #1e40af;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose strong:hover {
+  color: #1e3a8a;
+  text-shadow: 0 0 8px rgba(30, 64, 175, 0.3);
+}
+
+.enhanced-prose em {
+  @apply italic text-gray-600;
+  color: #7c3aed;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose em:hover {
+  color: #6d28d9;
+  text-shadow: 0 0 8px rgba(124, 58, 237, 0.3);
+}
+
+.enhanced-prose a {
+  @apply text-primary-600 hover:text-primary-700 underline;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.enhanced-prose a:hover {
+  text-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+  transform: translateY(-1px);
+}
+
+.enhanced-prose a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  transition: width 0.3s ease;
+}
+
+.enhanced-prose a:hover::after {
+  width: 100%;
+}
+
+.enhanced-prose code {
+  @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  border: 1px solid #d1d5db;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose code:hover {
+  background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.enhanced-prose pre {
+  @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto;
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  border: 1px solid #374151;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose pre:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.enhanced-prose table {
+  @apply w-full border-collapse border border-gray-300 my-6;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose table:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+.enhanced-prose th {
+  @apply bg-gray-100 text-gray-900 font-semibold p-3 text-left;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  border-bottom: 2px solid #d1d5db;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose th:hover {
+  background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+}
+
+.enhanced-prose td {
+  @apply p-3 border-b border-gray-200;
+  transition: background-color 0.2s ease;
+}
+
+.enhanced-prose tr:hover td {
+  background-color: #f9fafb;
+  transform: scale(1.01);
+}
+
+.enhanced-prose img {
+  @apply rounded-lg shadow-lg my-6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.enhanced-prose img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.enhanced-prose hr {
+  @apply my-8;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose hr:hover {
+  background: linear-gradient(90deg, transparent, #1d4ed8, #8b5cf6, transparent);
+  height: 3px;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.enhanced-prose > * {
+  animation: fadeInUp 0.6s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.enhanced-prose > *:nth-child(1) { animation-delay: 0.1s; }
+.enhanced-prose > *:nth-child(2) { animation-delay: 0.2s; }
+.enhanced-prose > *:nth-child(3) { animation-delay: 0.3s; }
+.enhanced-prose > *:nth-child(4) { animation-delay: 0.4s; }
+.enhanced-prose > *:nth-child(5) { animation-delay: 0.5s; }
+
+.animate-fade-in {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Highlight important text */
+.enhanced-prose .highlight {
+  background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.enhanced-prose .highlight:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Call to action styling */
+.enhanced-prose .cta-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  text-align: center;
+  box-shadow: 0 10px 25px -5px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.enhanced-prose .cta-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -10px rgba(102, 126, 234, 0.6);
+  animation: none;
+}
+
+.enhanced-prose .cta-box h3 {
+  color: white !important;
+  margin-bottom: 0.5rem;
+}
+
+.enhanced-prose .cta-box p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin-bottom: 0;
+}
+
+/* Reading progress bar animation */
+@keyframes progressGlow {
+  0% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+}
+
+#reading-progress {
+  animation: progressGlow 2s ease-in-out infinite;
+}
+
+/* Floating action buttons hover effects */
+.floating-action-btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.floating-action-btn:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+  .enhanced-prose h1 {
+    font-size: 1.875rem;
+  }
+  
+  .enhanced-prose h2 {
+    font-size: 1.5rem;
+  }
+  
+  .enhanced-prose h3 {
+    font-size: 1.25rem;
+  }
+  
+  .enhanced-prose p {
+    font-size: 1rem;
   }
 }

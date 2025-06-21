@@ -1,5 +1,6 @@
-const zaloNumber = '0901 234 567';
-const zaloQR = '/zalo-qr.png'; // Đặt file ảnh QR code Zalo vào public hoặc assets
+import { images } from "../assets/images";
+
+const zaloNumber = '0909876287';
 
 const OnlineConsult = () => {
   return (
@@ -11,7 +12,7 @@ const OnlineConsult = () => {
         </p>
         <div className="mb-6 flex flex-col items-center">
           <img
-            src={zaloQR}
+            src={images.zalo.zaloQR}
             alt="QR Zalo Nha khoa Nhật Thanh"
             className="w-48 h-48 rounded-xl border-4 border-primary-100 shadow-lg mb-4"
           />

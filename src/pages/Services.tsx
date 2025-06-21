@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { CheckIcon, XMarkIcon } from '@heroicons/react/20/solid'
 import { useState } from 'react'
+import { Helmet } from 'react-helmet-async';
+import { images } from '../assets/images';
 
 interface Service {
   id: string;
@@ -23,7 +25,7 @@ const servicesData: Service[] = [
       'Lên kế hoạch điều trị',
     ],
     price: 'Miễn phí',
-    image: '/services/consultation.jpg',
+    image: images.services.khamvatuvan,
   },
   {
     id: 'cleaning',
@@ -36,7 +38,7 @@ const servicesData: Service[] = [
       'Kiểm tra sức khỏe nướu',
     ],
     price: '500.000đ - 1.000.000đ',
-    image: '/services/cleaning.jpg',
+    image: images.services.caovoirang,
   },
   {
     id: 'filling',
@@ -49,7 +51,7 @@ const servicesData: Service[] = [
       'Bảo hành 2 năm',
     ],
     price: '800.000đ - 2.000.000đ',
-    image: '/services/filling.jpg',
+    image: images.services.tramrang,
   },
   {
     id: 'whitening',
@@ -62,7 +64,7 @@ const servicesData: Service[] = [
       'Hiệu quả lâu dài',
     ],
     price: '2.000.000đ - 5.000.000đ',
-    image: '/services/whitening.jpg',
+    image: images.services.taytrangrang,
   },
   {
     id: 'implant',
@@ -75,7 +77,7 @@ const servicesData: Service[] = [
       'Không đau, không sưng',
     ],
     price: '15.000.000đ - 30.000.000đ',
-    image: '/services/implant.jpg',
+    image: images.services.cayghepimplant,
   },
   {
     id: 'orthodontics',
@@ -88,7 +90,7 @@ const servicesData: Service[] = [
       'Tư vấn miễn phí',
     ],
     price: '25.000.000đ - 80.000.000đ',
-    image: '/services/orthodontics.jpg',
+    image: images.services.chinhnha,
   },
   {
     id: 'wisdom',
@@ -101,7 +103,7 @@ const servicesData: Service[] = [
       'Chăm sóc sau nhổ răng',
     ],
     price: '2.000.000đ - 5.000.000đ',
-    image: '/services/wisdom.jpg',
+    image: images.services.nhorangkhon,
   },
   {
     id: 'root-canal',
@@ -114,7 +116,7 @@ const servicesData: Service[] = [
       'Bảo hành 2 năm',
     ],
     price: '1.500.000đ - 3.000.000đ',
-    image: '/services/root-canal.jpg',
+    image: images.services.dieutrituyrang,
   },
   {
     id: 'veneer',
@@ -127,7 +129,7 @@ const servicesData: Service[] = [
       'Bảo hành 5 năm',
     ],
     price: '5.000.000đ - 8.000.000đ/răng',
-    image: '/services/veneer.jpg',
+    image: images.services.dansuveneer,
   },
   {
     id: 'periodontal',
@@ -140,7 +142,7 @@ const servicesData: Service[] = [
       'Tư vấn chăm sóc tại nhà',
     ],
     price: '2.000.000đ - 8.000.000đ',
-    image: '/services/periodontal.jpg',
+    image: images.services.viemnhachu,
   }
 ]
 
@@ -151,7 +153,10 @@ export default function Services() {
 
   return (
     <div className="bg-white py-24 sm:py-32">
-      
+      <Helmet>
+        <title>Dịch vụ | Nha khoa Nhật Thanh</title>
+        <meta name="description" content="Bảng giá Nha khoa Nhật Thanh quận Bình Thạnh - 37A Nguyễn Văn Đậu Phường 6 Quận Bình Thạnh." />
+      </Helmet>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base font-semibold leading-7 text-primary-600">Dịch vụ của chúng tôi</h2>

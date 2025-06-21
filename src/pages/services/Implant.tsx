@@ -8,7 +8,8 @@ import {
   ArrowLeftIcon,
   StarIcon
 } from '@heroicons/react/24/solid'
-
+import { SEO } from '../../components'
+import { images } from '../../assets/images'
 const Implant = () => {
   const advantages = [
     {
@@ -64,22 +65,26 @@ const Implant = () => {
     {
       name: 'CT Cone Beam 3D',
       description: 'Chụp CT 3D độ phân giải cao, cho phép lập kế hoạch chính xác.',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: images.services.conebean,
     },
     {
       name: 'Implant Thụy Sĩ',
       description: 'Sử dụng Implant chất lượng cao từ Thụy Sĩ, đảm bảo độ bền và tương thích.',
-      image: 'https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: images.services.implantThuySi,
     },
     {
       name: 'Phẫu thuật ít xâm lấn',
       description: 'Kỹ thuật phẫu thuật hiện đại, ít đau, ít sưng và hồi phục nhanh.',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: images.services.phauthuatitxamlan,
     }
   ]
 
   return (
     <div className="bg-white">
+      <SEO
+        title="Cấy ghép Implant | Nha khoa Nhật Thanh"
+        description="Cấy ghép Implant với công nghệ hiện đại, an toàn và bền vững."
+      />
       {/* Header */}
       <div className="bg-gradient-to-b from-primary-50 to-white">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
@@ -105,11 +110,11 @@ const Implant = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="relative h-96 rounded-2xl overflow-hidden mb-16">
           <img
-            src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            src="https://nhakhoanganphuong.com/wp-content/uploads/2022/03/cay-ghep-implant-1.png"
             alt="Cấy ghép Implant"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
           <div className="absolute bottom-6 left-6 text-white">
             <h2 className="text-2xl font-bold">Công nghệ Implant tiên tiến</h2>
             <p className="text-lg opacity-90">Phục hồi răng mất hoàn hảo</p>
@@ -194,13 +199,14 @@ const Implant = () => {
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div
+          className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {technologies.map((tech) => (
               <div key={tech.name} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img
                   src={tech.image}
                   alt={tech.name}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{tech.name}</h3>

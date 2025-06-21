@@ -1,10 +1,122 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/jpeg" href="/src/assets/img/logo.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Nha Khoa Nhật Thanh - Nha Khoa Uy Tín Tại TP.HCM | Chăm Sóc Nụ Cười Việt</title>
+    <meta name="title" content="Nha Khoa Nhật Thanh - Nha Khoa Uy Tín Tại TP.HCM | Chăm Sóc Nụ Cười Việt" />
+    <meta name="description" content="Nha khoa Nhật Thanh - Đội ngũ bác sĩ chuyên môn cao, trang thiết bị hiện đại. Chuyên cấy ghép Implant, chỉnh nha, nha khoa thẩm mỹ. Đặt lịch khám ngay!" />
+    <meta name="keywords" content="nha khoa nhật thanh, nha khoa tphcm, cấy ghép implant, chỉnh nha, nha khoa thẩm mỹ, tẩy trắng răng, dán sứ veneer, điều trị tủy, nha khoa trẻ em" />
+    <meta name="author" content="Nha Khoa Nhật Thanh" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Vietnamese" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nhakhoanhatthanh.com/" />
+    <meta property="og:title" content="Nha Khoa Nhật Thanh - Nha Khoa Uy Tín Tại TP.HCM" />
+    <meta property="og:description" content="Nha khoa Nhật Thanh - Đội ngũ bác sĩ chuyên môn cao, trang thiết bị hiện đại. Chuyên cấy ghép Implant, chỉnh nha, nha khoa thẩm mỹ." />
+    <meta property="og:image" content="/src/assets/img/nhakhoanhatthanh.jpg" />
+    <meta property="og:site_name" content="Nha Khoa Nhật Thanh" />
+    <meta property="og:locale" content="vi_VN" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://nhakhoanhatthanh.com/" />
+    <meta property="twitter:title" content="Nha Khoa Nhật Thanh - Nha Khoa Uy Tín Tại TP.HCM" />
+    <meta property="twitter:description" content="Nha khoa Nhật Thanh - Đội ngũ bác sĩ chuyên môn cao, trang thiết bị hiện đại. Chuyên cấy ghép Implant, chỉnh nha, nha khoa thẩm mỹ." />
+    <meta property="twitter:image" content="/src/assets/img/nhakhoanhatthanh.jpg" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="msapplication-TileColor" content="#0ea5e9" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Nha Khoa Nhật Thanh" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nhakhoanhatthanh.com/" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Nha Khoa Nhật Thanh",
+      "description": "Nha khoa Nhật Thanh - Đội ngũ bác sĩ chuyên môn cao, trang thiết bị hiện đại, chuyên cấy ghép Implant, chỉnh nha, nha khoa thẩm mỹ",
+      "url": "https://nhakhoanhatthanh.com",
+      "logo": "https://nhakhoanhatthanh.com/src/assets/img/logo.jpeg",
+      "image": "https://nhakhoanhatthanh.com/src/assets/img/nhakhoanhatthanh.jpg",
+      "telephone": "+84-909-876-287",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Thành phố Hồ Chí Minh",
+        "addressRegion": "TP.HCM",
+        "addressCountry": "VN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "10.8231",
+        "longitude": "106.6297"
+      },
+      "openingHours": "Mo-Sa 08:00-20:00",
+      "priceRange": "$$",
+      "medicalSpecialty": ["Dentistry", "Orthodontics", "Dental Implants", "Cosmetic Dentistry"],
+      "availableService": [
+        {
+          "@type": "MedicalProcedure",
+          "name": "Cấy ghép Implant",
+          "description": "Phục hình răng mất bằng cấy ghép Implant"
+        },
+        {
+          "@type": "MedicalProcedure", 
+          "name": "Chỉnh nha",
+          "description": "Điều trị răng khấp khểnh, niềng răng"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Nha khoa thẩm mỹ", 
+          "description": "Tẩy trắng răng, dán sứ Veneer"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "150"
+      }
+    }
+    </script>
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Nha Khoa Nhật Thanh",
+      "description": "Nha khoa uy tín tại TP.HCM với đội ngũ bác sĩ chuyên môn cao",
+      "url": "https://nhakhoanhatthanh.com",
+      "telephone": "+84-909-876-287",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Thành phố Hồ Chí Minh",
+        "addressRegion": "TP.HCM",
+        "addressCountry": "VN"
+      },
+      "openingHours": "Mo-Sa 08:00-20:00",
+      "priceRange": "$$"
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

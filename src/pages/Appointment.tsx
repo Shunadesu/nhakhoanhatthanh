@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { CalendarIcon, ClockIcon, UserIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
+import { Helmet } from 'react-helmet-async'
 
 const services = [
   { id: 'consultation', name: 'Khám và tư vấn' },
@@ -40,6 +41,10 @@ export default function Appointment() {
 
   return (
     <div className="bg-white py-24 sm:py-32">
+      <Helmet>
+        <title>Đặt lịch hẹn | Nha khoa Nhật Thanh</title>
+        <meta name="description" content="Đặt hẹn Nha khoa Nhật Thanh ngay - Đội ngũ bác sĩ chuyên môn cao, trang thiết bị hiện đại, sứ mệnh chăm sóc nụ cười Việt." />
+      </Helmet>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Đặt lịch hẹn</h2>

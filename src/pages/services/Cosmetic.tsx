@@ -7,6 +7,8 @@ import {
   CheckCircleIcon,
   ArrowLeftIcon
 } from '@heroicons/react/24/solid'
+import { SEO } from '../../components'
+import { images } from '../../assets/images'
 
 const Cosmetic = () => {
   const services = [
@@ -43,20 +45,24 @@ const Cosmetic = () => {
   const beforeAfter = [
     {
       title: 'Tẩy trắng răng',
-      before: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      after: 'https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      before: images.services.taytrangrang1,
+      after: images.services.taytrangrang1,
       description: 'Kết quả tẩy trắng răng sau 1 lần điều trị'
     },
     {
       title: 'Bọc răng sứ',
-      before: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      after: 'https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      before: images.services.bocrangsuco,
+      after: images.services.bocrangsuco,
       description: 'Phục hồi răng sứ thẩm mỹ hoàn hảo'
     }
   ]
 
   return (
     <div className="bg-white">
+      <SEO
+        title="Nha khoa thẩm mỹ | Nha khoa Nhật Thanh"
+        description="Nha khoa thẩm mỹ với các dịch vụ chuyên sâu, đảm bảo nụ cười đẹp và hoàn hảo."
+      />
       {/* Header */}
       <div className="bg-gradient-to-b from-primary-50 to-white">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
@@ -82,7 +88,7 @@ const Cosmetic = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="relative h-96 rounded-2xl overflow-hidden mb-16">
           <img
-            src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            src="https://cdnphoto.dantri.com.vn/m4ZoTJ8mNQpplnrZX_lAHh3X7NA=/thumb_w/1020/2022/09/16/meo-hay-de-co-duoc-nu-cuoi-hoan-hao-docx-1663344861381.jpeg"
             alt="Nha khoa thẩm mỹ"
             className="w-full h-full object-cover"
           />
