@@ -26,6 +26,7 @@ import doctor3 from './img/doctor/Doctor_xinhdep.png'
 import doctor4 from './img/doctor/Doctor_xinhdep-1.png'
 import doctor5 from './img/doctor/Doctor_xinhdep-2.png'
 import zaloQR from './img/zalo/Zalo.jpg'
+import zaloicon from './img/zalo/Icon_of_Zalo.svg.webp'
 
 //service
 import khamvatuvan from './img/services/khamvatuvan.jpg'
@@ -51,6 +52,17 @@ import quytrinhdieutri from './img/gallery/quytrinhdieutri.webp'
 import doinguchuyenmon from './img/gallery/doinguchuyenmon.jpg'
 import ketquadiutri from './img/gallery/ketquadieutri.jpg'
 import khonggiancho from './img/gallery/khonggiancho.jpeg'
+
+//news
+import chamsocrangmieng from './img/news/chamsocrangmieng.jpeg'
+import chiphidieutri from './img/news/chiphidieutri.jpg'
+import congnghenhakhoa from './img/news/congnghenhakhoa.jpg'
+import niengrang from './img/news/nieng-rang-va-nhung-dieu-can-biet.jpg'
+import quytrinhthamkham from './img/news/quytrinhthamkham.png'
+import tamquantrongkhamrang from './img/news/tamquantrongkhamrang.jpg'
+import taytrangrangnews from './img/news/taytrangrang.png'
+import thoigiandieutri from './img/news/thoigiandieutri.jpg'
+
 
 // Import tất cả ảnh trong dự án
 export const images = {
@@ -114,11 +126,22 @@ export const images = {
     ketquadiutri,
     khonggiancho,
   },
+
+  news: {
+    chamsocrangmieng,
+    chiphidieutri,
+    congnghenhakhoa,
+    niengrang,
+    quytrinhthamkham,
+    tamquantrongkhamrang,
+    taytrangrangnews,
+    thoigiandieutri,
+  },
   // Logo và icons
   logo,
   logoWhite,
   favicon,
-  
+  zaloicon,
   // Background images
   backgrounds: {
     pattern: '/backgrounds/pattern.jpg',

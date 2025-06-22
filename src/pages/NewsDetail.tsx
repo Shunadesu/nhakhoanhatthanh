@@ -177,7 +177,7 @@ const NewsDetail = () => {
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-64 lg:h-96 object-cover rounded-2xl shadow-lg"
+                  className="w-full h-64 lg:h-96 object-contain rounded-2xl shadow-lg"
                 />
               </div>
             )}

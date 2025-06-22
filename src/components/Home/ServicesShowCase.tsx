@@ -5,7 +5,7 @@ const ServicesShowCase = () => {
   return (
     <div className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
+        <div className="mx-auto max-w-2xl text-center">
     <h2 className="text-base font-semibold leading-7 text-primary-600">Dịch vụ nổi bật</h2>
     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
       Giải pháp toàn diện cho nụ cười của bạn
@@ -16,7 +16,7 @@ const ServicesShowCase = () => {
     </p>
   </div>
   <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-    <dl className="grid max-w-xl grid-cols-2 gap-x-8 gap-y-8 lg:max-w-none lg:grid-cols-4">
+    <dl className="grid  grid-cols-1 gap-x-8 gap-y-8 max-w-none lg:grid-cols-4">
       {services.map((service) => (
         <div key={service.name} className="flex flex-col items-center bg-white rounded-2xl shadow-lg p-4 hover:shadow-xl transition-shadow duration-300">
           <dt className="flex items-center gap-x-3 text-lg font-semibold leading-7 text-gray-900">
@@ -26,7 +26,7 @@ const ServicesShowCase = () => {
             {service.name}
           </dt>
           <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600 items-center justify-center text-center">
-            <p className="flex-auto">{service.description}</p>
+            <p className="flex-auto text-sm leading-6 lg:text-base">{service.description}</p>
             <p className="mt-6 flex justify-center">
               <Link to={service.href} className="text-sm font-semibold leading-6 text-primary-600 hover:text-primary-500">
                 Tìm hiểu thêm

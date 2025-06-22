@@ -152,7 +152,7 @@ export default function Services() {
   const [selectedService, setSelectedService] = useState<Service | null>(null)
 
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-16 sm:py-32">
       <Helmet>
         <title>Dịch vụ | Nha khoa Nhật Thanh</title>
         <meta name="description" content="Bảng giá Nha khoa Nhật Thanh quận Bình Thạnh - 37A Nguyễn Văn Đậu Phường 6 Quận Bình Thạnh." />

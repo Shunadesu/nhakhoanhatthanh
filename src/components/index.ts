@@ -1,5 +1,6 @@
 export {default as FeedbackThanks} from './FeedbackThanks'
 export {default as FeaturedServices} from './FeaturedServices'
+export {default as FloatingContactButtons} from './FloatingContactButtons'
 export {default as ImageModal} from './ImageModal'
 export {default as ScrollToTop} from './ScrollToTop'
 export {default as SEO} from './SEO'

@@ -100,7 +100,7 @@ const General = () => {
 
       {/* Benefits */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-16">
-        <div className="mx-auto max-w-2xl lg:text-center mb-12">
+        <div className="mx-auto max-w-2xl text-center mb-12">
           <h2 className="text-base font-semibold leading-7 text-primary-600">Dịch vụ của chúng tôi</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Những gì chúng tôi cung cấp
@@ -165,7 +165,7 @@ const General = () => {
 
       {/* CTA */}
       <div className="bg-white">
-        <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div className="mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8">
           <div className="relative isolate overflow-hidden bg-primary-600 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
             <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Đặt lịch khám ngay hôm nay

@@ -6,12 +6,12 @@ export default function Doctors() {
   return (
 <div className="bg-gray-50 py-24 sm:py-28">
 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-  <div className="mx-auto max-w-2xl lg:text-center">
+  <div className="mx-auto max-w-2xl text-center">
     <h2 className="text-base font-semibold leading-7 text-primary-600">Đội ngũ bác sĩ</h2>
     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
       Gặp gỡ đội ngũ chuyên gia của chúng tôi
     </p>
-    <p className="mt-6 text-lg leading-8 text-gray-600">
+    <p className="mt-6 text-sm lg:text-lg leading-8 text-gray-600">
       Đội ngũ bác sĩ giàu kinh nghiệm, được đào tạo chuyên sâu và luôn tận tâm với nghề.
     </p>
   </div>

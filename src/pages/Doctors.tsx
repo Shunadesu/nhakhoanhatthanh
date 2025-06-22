@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 
 export default function Doctors() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-16 sm:py-32">
       <Helmet>
         <title>Đội ngũ Bác Sĩ | Nha khoa Nhật Thanh</title>
         <meta name="description" content="Nha khoa Nhật Thanh - Đội ngũ bác sĩ chuyên môn cao, trang thiết bị hiện đại, sứ mệnh chăm sóc nụ cười Việt." />
       </Helmet>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
+        <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Đội ngũ bác sĩ</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Đội ngũ bác sĩ của chúng tôi là những chuyên gia giàu kinh nghiệm, được đào tạo bài bản và thường xuyên cập nhật kiến thức.

@@ -55,7 +55,7 @@ const Home = () => {
       {/* Stats section */}
       <div className="bg-primary-50 ">
         <div className="mx-auto max-w-7xl py-8 px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:max-w-none">
+          <div className="mx-auto max-w-none">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Niềm tin của khách hàng
@@ -64,7 +64,7 @@ const Home = () => {
                 Những con số nói lên chất lượng dịch vụ của chúng tôi
               </p>
             </div>
-            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+            <dl className="mt-16 grid grid-cols-2 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
               {stats.map((stat) => (
                 <div key={stat.name} className="flex flex-col bg-white/5 p-8">
                   <dt className="text-sm font-semibold leading-6 text-gray-600">{stat.name}</dt>
@@ -74,7 +74,7 @@ const Home = () => {
             </dl>
           </div>
           
-          <div className="relative isolate overflow-hidden bg-primary-600 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+          <div className="relative isolate overflow-hidden bg-primary-600 px-6 py-24 text-center shadow-2xl rounded-3xl sm:px-16">
             <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Đặt lịch khám ngay hôm nay
             </h2>

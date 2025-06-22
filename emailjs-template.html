@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tin nhắn liên hệ từ Nha khoa Nhật Thanh</title>
+</head>
+<body style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f5f5f5;">
+    <div style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
+        <h1 style="margin: 0; font-size: 24px;">📧 Tin nhắn liên hệ mới</h1>
+        <p style="margin: 10px 0 0 0; opacity: 0.9;">Nha khoa Nhật Thanh</p>
+    </div>
+    
+    <div style="background: #f8fafc; padding: 20px; border-radius: 0 0 8px 8px; border: 1px solid #e2e8f0; border-top: none;">
+        <p style="margin: 0 0 20px 0;">Bạn có tin nhắn liên hệ mới từ <strong>{{name}}</strong>. Vui lòng phản hồi sớm nhất có thể.</p>
+        
+        <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <div style="color: #64748b; font-size: 12px; margin-bottom: 15px;">📅 {{time}}</div>
+            
+            <div style="background: #f1f5f9; border-radius: 6px; padding: 15px; margin: 15px 0;">
+                <h3 style="margin: 0 0 10px 0; color: #1e293b; font-size: 16px;">👤 Thông tin liên hệ</h3>
+                <p style="margin: 5px 0; color: #475569;"><strong>Họ và tên:</strong> {{name}}</p>
+                <p style="margin: 5px 0; color: #475569;"><strong>Email:</strong> {{email}}</p>
+                <p style="margin: 5px 0; color: #475569;"><strong>Số điện thoại:</strong> {{phone}}</p>
+                <p style="margin: 5px 0; color: #475569;"><strong>Chủ đề:</strong> {{subject}}</p>
+            </div>
+            
+            <div style="margin-top: 20px;">
+                <h3 style="margin: 0 0 10px 0; color: #1e293b;">💬 Nội dung tin nhắn</h3>
+                <div style="background: #f8fafc; padding: 15px; border-radius: 6px; border-left: 4px solid #2563eb;">
+                    {{message}}
+                </div>
+            </div>
+        </div>
+        
+        <div style="background: #dbeafe; border: 1px solid #93c5fd; border-radius: 6px; padding: 15px; margin: 20px 0;">
+            <h4 style="margin: 0 0 10px 0; color: #1e40af;">📋 Hướng dẫn phản hồi</h4>
+            <ul style="margin: 0; padding-left: 20px; color: #1e40af;">
+                <li>Phản hồi qua email: {{email}}</li>
+                <li>Gọi điện trực tiếp: {{phone}}</li>
+                <li>Hoặc sử dụng hệ thống quản lý khách hàng</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e2e8f0; color: #64748b; font-size: 12px;">
+        <p style="margin: 5px 0;">© 2024 Nha khoa Nhật Thanh. Tất cả quyền được bảo lưu.</p>
+        <p style="margin: 5px 0;">37A Nguyễn Văn Đậu, Quận Bình Thạnh, TP. Hồ Chí Minh</p>
+    </div>
+</body>
+</html> 

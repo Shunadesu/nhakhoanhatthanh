@@ -31,9 +31,9 @@ const About = () => {
         <Gallery />
 
         {/* Why choose us section */}
-        <div className="bg-white py-24 sm:py-32">
+        <div className="bg-white py-16 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl lg:text-center">
+            <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-base font-semibold leading-7 text-primary-600">Tại sao chọn chúng tôi</h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Cam kết chất lượng dịch vụ hàng đầu
@@ -57,9 +57,6 @@ const About = () => {
           </div>
         </div>
 
-        
-     
-      
       </div>
     </div>
   );

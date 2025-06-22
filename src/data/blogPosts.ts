@@ -1,10 +1,12 @@
+import { images } from '../assets/images';
+
 export const blogPosts = [
     {
       slug: 'quy-trinh-kham-va-dieu-tri-tai-nha-khoa-nhat-thanh',
       title: 'Quy trình khám và điều trị tại Nha khoa Nhật Thanh',
       description: 'Tìm hiểu quy trình khám và điều trị chuẩn quốc tế tại Nha khoa Nhật Thanh, giúp bạn an tâm khi trải nghiệm dịch vụ.',
-      image: '/news/quy-trinh-kham-dieu-tri.jpg',
-      date: '2024-04-01',
+      image: images.news.quytrinhthamkham,
+      date: '2025-04-01',
       category: 'Quy trình',
       content: `
         <h2>Quy trình khám và điều trị chuẩn quốc tế</h2>
@@ -33,8 +35,8 @@ export const blogPosts = [
       slug: 'chi-phi-dieu-tri-nha-khoa-va-bao-hiem-y-te',
       title: 'Chi phí điều trị nha khoa và bảo hiểm y tế: Những điều bạn cần biết',
       description: 'Giải đáp thắc mắc về chi phí điều trị nha khoa và quyền lợi bảo hiểm y tế tại Nha khoa Nhật Thanh.',
-      image: '/news/chi-phi-bao-hiem.jpg',
-      date: '2024-04-02',
+      image: images.news.chiphidieutri,
+      date: '2025-04-02',
       category: 'Chi phí',
       content: `
         <h2>Chi phí điều trị nha khoa và bảo hiểm y tế</h2>
@@ -72,8 +74,8 @@ export const blogPosts = [
       slug: 'thoi-gian-dieu-tri-nha-khoa-phu-thuoc-vao-nhung-yeu-to-nao',
       title: 'Thời gian điều trị nha khoa: Phụ thuộc vào những yếu tố nào?',
       description: 'Tìm hiểu các yếu tố ảnh hưởng đến thời gian điều trị nha khoa và cách tối ưu quá trình điều trị tại Nha khoa Nhật Thanh.',
-      image: '/news/thoi-gian-dieu-tri.jpg',
-      date: '2024-04-03',
+      image: images.news.thoigiandieutri,
+      date: '2025-04-03',
       category: 'Thời gian',
       content: `
         <h2>Thời gian điều trị nha khoa</h2>
@@ -113,8 +115,8 @@ export const blogPosts = [
       slug: 'loi-ich-kham-rang-dinh-ky',
       title: 'Lợi ích của việc khám răng định kỳ',
       description: 'Khám răng định kỳ giúp phát hiện sớm các vấn đề và bảo vệ sức khỏe răng miệng lâu dài.',
-      image: '/news/kham-rang-dinh-ky.jpg',
-      date: '2024-04-04',
+      image: images.news.chamsocrangmieng,
+      date: '2025-04-04',
       category: 'Chăm sóc',
       content: `
         <h2>Lợi ích của việc khám răng định kỳ</h2>
@@ -155,8 +157,8 @@ export const blogPosts = [
       slug: 'cong-nghe-moi-trong-nha-khoa',
       title: 'Công nghệ mới trong nha khoa',
       description: 'Khám phá các công nghệ hiện đại đang được ứng dụng tại Nha khoa Nhật Thanh.',
-      image: '/news/cong-nghe-moi.jpg',
-      date: '2024-04-05',
+      image: images.news.congnghenhakhoa,
+      date: '2025-04-05',
       category: 'Công nghệ',
       content: `
         <h2>Công nghệ mới trong nha khoa</h2>
@@ -200,8 +202,8 @@ export const blogPosts = [
       slug: 'huong-dan-cham-soc-rang-sau-dieu-tri',
       title: 'Hướng dẫn chăm sóc răng sau điều trị',
       description: 'Những lưu ý quan trọng giúp bạn giữ gìn kết quả điều trị nha khoa lâu dài.',
-      image: '/news/cham-soc-sau-dieu-tri.jpg',
-      date: '2024-04-06',
+      image: images.news.chamsocrangmieng,
+      date: '2025-04-06',
       category: 'Chăm sóc',
       content: `
         <h2>Hướng dẫn chăm sóc răng sau điều trị</h2>
@@ -254,8 +256,8 @@ export const blogPosts = [
       slug: 'dich-vu-tay-trang-rang-an-toan',
       title: 'Dịch vụ tẩy trắng răng an toàn',
       description: 'Tìm hiểu quy trình và lợi ích của tẩy trắng răng tại Nha khoa Nhật Thanh.',
-      image: '/news/tay-trang-rang.jpg',
-      date: '2024-04-07',
+      image: images.news.taytrangrangnews,
+      date: '2025-04-07', 
       category: 'Thẩm mỹ',
       content: `
         <h2>Dịch vụ tẩy trắng răng an toàn</h2>
@@ -310,8 +312,8 @@ export const blogPosts = [
       slug: 'nhung-dieu-can-biet-ve-nieng-rang',
       title: 'Những điều cần biết về niềng răng',
       description: 'Giải đáp các thắc mắc thường gặp về niềng răng thẩm mỹ.',
-      image: '/news/nieng-rang.jpg',
-      date: '2024-04-08',
+      image: images.news.niengrang,
+      date: '2025-04-08',
       category: 'Chỉnh nha',
       content: `
         <h2>Những điều cần biết về niềng răng</h2>
@@ -374,5 +376,188 @@ export const blogPosts = [
         </ul>
       `
     },
-    // Có thể thêm nhiều bài hơn nếu muốn
+    {
+      slug: 'phong-ngua-sau-rang-hieu-qua',
+      title: 'Phòng ngừa sâu răng hiệu quả cho mọi lứa tuổi',
+      description: 'Tìm hiểu các biện pháp phòng ngừa sâu răng hiệu quả, bảo vệ sức khỏe răng miệng cho cả gia đình.',
+      image: images.news.tamquantrongkhamrang,
+      date: '2025-06-10',
+      category: 'Phòng ngừa',
+      content: `
+        <h2>Phòng ngừa sâu răng hiệu quả cho mọi lứa tuổi</h2>
+        <p>Sâu răng là một trong những bệnh lý phổ biến nhất về răng miệng, ảnh hưởng đến cả trẻ em và người lớn. Việc phòng ngừa sâu răng không chỉ giúp bảo vệ sức khỏe răng miệng mà còn tiết kiệm chi phí điều trị lâu dài.</p>
+        <h3>Nguyên nhân gây sâu răng</h3>
+        <ul>
+          <li>Vệ sinh răng miệng không đúng cách</li>
+          <li>Ăn nhiều đồ ngọt, nước có gas</li>
+          <li>Không khám răng định kỳ</li>
+          <li>Thiếu fluoride trong nước uống hoặc kem đánh răng</li>
+        </ul>
+        <h3>Các biện pháp phòng ngừa sâu răng</h3>
+        <ul>
+          <li>Đánh răng ít nhất 2 lần/ngày với kem đánh răng chứa fluoride</li>
+          <li>Sử dụng chỉ nha khoa làm sạch kẽ răng</li>
+          <li>Hạn chế ăn vặt, đặc biệt là đồ ngọt</li>
+          <li>Khám răng định kỳ 6 tháng/lần</li>
+          <li>Súc miệng bằng nước muối hoặc nước súc miệng chuyên dụng</li>
+          <li>Bổ sung thực phẩm giàu canxi và vitamin D</li>
+        </ul>
+        <h3>Lưu ý cho từng đối tượng</h3>
+        <ul>
+          <li><b>Trẻ em:</b> Hướng dẫn trẻ đánh răng đúng cách, kiểm tra răng sữa thường xuyên</li>
+          <li><b>Người lớn:</b> Chú ý các răng hàm, nơi dễ tích tụ mảng bám</li>
+          <li><b>Người cao tuổi:</b> Kiểm tra răng giả, chăm sóc nướu kỹ lưỡng</li>
+        </ul>
+        <h3>Kết luận</h3>
+        <p>Phòng ngừa sâu răng là việc làm cần thiết và đơn giản nếu thực hiện đúng cách. Hãy chủ động bảo vệ sức khỏe răng miệng cho bản thân và gia đình ngay hôm nay!</p>
+      `
+    },
+    {
+      slug: 'nha-khoa-binh-thanh-uy-tin',
+      title: 'Nha khoa Bình Thạnh uy tín: Kinh nghiệm chọn phòng khám chất lượng',
+      description: 'Tìm hiểu bí quyết chọn nha khoa uy tín tại Bình Thạnh, lý do nên chọn Nha khoa Nhật Thanh và các dịch vụ nổi bật.',
+      image: images.services.khamvatuvan,
+      date: '2025-06-10',
+      category: 'Địa phương',
+      content: `
+        <h2>Nha khoa Bình Thạnh uy tín: Kinh nghiệm chọn phòng khám chất lượng</h2>
+        <p>Bạn đang tìm kiếm <b>nha khoa Bình Thạnh</b> uy tín, chất lượng với đội ngũ bác sĩ giỏi và dịch vụ chuyên nghiệp? Bài viết này sẽ giúp bạn nhận biết các tiêu chí chọn phòng khám nha khoa tốt nhất tại khu vực Bình Thạnh.</p>
+        
+        <h3>Tiêu chí chọn nha khoa uy tín tại Bình Thạnh</h3>
+        <ul>
+          <li>Đội ngũ bác sĩ có chuyên môn cao, giàu kinh nghiệm</li>
+          <li>Cơ sở vật chất hiện đại, trang thiết bị tiên tiến</li>
+          <li>Quy trình vô trùng nghiêm ngặt</li>
+          <li>Bảng giá dịch vụ minh bạch, rõ ràng</li>
+          <li>Được nhiều khách hàng đánh giá tốt trên Google, Facebook</li>
+          <li>Chính sách bảo hành và chăm sóc sau điều trị chu đáo</li>
+        </ul>
+        
+        <h3>Lý do nên chọn Nha khoa Nhật Thanh tại Bình Thạnh</h3>
+        <ul>
+          <li>Hơn 10 năm kinh nghiệm phục vụ khách hàng tại Bình Thạnh</li>
+          <li>Đội ngũ bác sĩ chuyên khoa, tận tâm tư vấn và điều trị</li>
+          <li>Ứng dụng công nghệ mới: chụp X-quang kỹ thuật số, CAD/CAM, Implant hiện đại</li>
+          <li>Không gian phòng khám sạch sẽ, thân thiện</li>
+          <li>Hỗ trợ trả góp, thanh toán linh hoạt</li>
+        </ul>
+        
+        <h3>Các dịch vụ nổi bật tại Nha khoa Nhật Thanh Bình Thạnh</h3>
+        <ul>
+          <li>Khám và tư vấn răng miệng tổng quát</li>
+          <li>Chỉnh nha – niềng răng thẩm mỹ</li>
+          <li>Cấy ghép Implant không đau</li>
+          <li>Bọc răng sứ thẩm mỹ</li>
+          <li>Lấy cao răng, tẩy trắng răng</li>
+          <li>Điều trị viêm nướu, nha chu</li>
+        </ul>
+        
+        <h3>Khách hàng nói gì về Nha khoa Nhật Thanh?</h3>
+        <p>"Tôi rất hài lòng khi điều trị tại Nha khoa Nhật Thanh Bình Thạnh, bác sĩ tận tâm, phòng khám sạch sẽ, giá cả hợp lý." – <i>Chị Lan, Bình Thạnh</i></p>
+        <p>"Dịch vụ niềng răng ở đây rất chuyên nghiệp, mình được tư vấn kỹ càng và theo dõi sát sao." – <i>Bạn Minh, Gò Vấp</i></p>
+        
+        <h3>Kết luận</h3>
+        <p>Nếu bạn đang tìm kiếm <b>phòng khám nha khoa Bình Thạnh</b> uy tín, hãy đến với Nha khoa Nhật Thanh để trải nghiệm dịch vụ chất lượng, an toàn và hiệu quả. Đặt lịch hẹn ngay hôm nay để được tư vấn miễn phí!</p>
+      `
+    },
+    {
+      slug: 'cac-dich-vu-nha-khoa-pho-bien',
+      title: 'Các dịch vụ nha khoa phổ biến và lợi ích khi lựa chọn đúng dịch vụ',
+      description: 'Khám phá các dịch vụ nha khoa phổ biến, lợi ích và kinh nghiệm chọn dịch vụ phù hợp tại phòng khám uy tín.',
+      image: images.services.bocrangsuco,
+      date: '2025-06-10',
+      category: 'Dịch vụ',
+      content: `
+        <h2>Các dịch vụ nha khoa phổ biến và lợi ích khi lựa chọn đúng dịch vụ</h2>
+        <p>Bạn đang tìm kiếm <b>dịch vụ nha khoa</b> phù hợp với nhu cầu? Bài viết này sẽ giúp bạn hiểu rõ các dịch vụ răng miệng phổ biến và lợi ích khi lựa chọn đúng dịch vụ tại <b>phòng khám nha khoa uy tín</b>.</p>
+        
+        <h3>Các dịch vụ nha khoa phổ biến hiện nay</h3>
+        <ul>
+          <li><b>Khám và tư vấn răng miệng tổng quát:</b> Phát hiện sớm các vấn đề về răng, nướu, khoang miệng.</li>
+          <li><b>Lấy cao răng, đánh bóng răng:</b> Loại bỏ mảng bám, phòng ngừa viêm nướu, hôi miệng.</li>
+          <li><b>Trám răng thẩm mỹ:</b> Khắc phục răng sâu, răng mẻ, bảo vệ răng thật.</li>
+          <li><b>Tẩy trắng răng:</b> Cải thiện màu sắc răng, giúp nụ cười trắng sáng tự tin.</li>
+          <li><b>Chỉnh nha – Niềng răng:</b> Sắp xếp lại vị trí răng, cải thiện thẩm mỹ và chức năng ăn nhai.</li>
+          <li><b>Cấy ghép Implant:</b> Phục hồi răng mất, ăn nhai chắc chắn như răng thật.</li>
+          <li><b>Bọc răng sứ thẩm mỹ:</b> Khắc phục răng xỉn màu, răng vỡ lớn, bảo vệ răng thật.</li>
+          <li><b>Điều trị viêm nướu, nha chu:</b> Ngăn ngừa mất răng, bảo vệ sức khỏe răng miệng lâu dài.</li>
+        </ul>
+        
+        <h3>Lợi ích khi lựa chọn đúng dịch vụ nha khoa</h3>
+        <ul>
+          <li>Giải quyết đúng vấn đề răng miệng, tiết kiệm chi phí và thời gian</li>
+          <li>Đảm bảo an toàn, hiệu quả lâu dài</li>
+          <li>Tăng sự tự tin, cải thiện chất lượng cuộc sống</li>
+        </ul>
+        
+        <h3>Kinh nghiệm chọn phòng khám nha khoa uy tín</h3>
+        <ul>
+          <li>Chọn phòng khám có đội ngũ bác sĩ chuyên môn cao, giàu kinh nghiệm</li>
+          <li>Cơ sở vật chất hiện đại, quy trình vô trùng nghiêm ngặt</li>
+          <li>Bảng giá dịch vụ rõ ràng, minh bạch</li>
+          <li>Được nhiều khách hàng đánh giá tốt</li>
+        </ul>
+        
+        <h3>Kết luận</h3>
+        <p>Việc lựa chọn đúng <b>dịch vụ nha khoa</b> và phòng khám uy tín sẽ giúp bạn bảo vệ sức khỏe răng miệng tối ưu. Hãy liên hệ Nha khoa Nhật Thanh để được tư vấn miễn phí và trải nghiệm dịch vụ chất lượng!</p>
+      `
+    },
+    {
+      slug: 'chi-phi-cac-dich-vu-nha-khoa-bang-gia-chi-tiet',
+      title: 'Chi phí các dịch vụ nha khoa: Bảng giá chi tiết và lời khuyên tiết kiệm',
+      description: 'Tìm hiểu bảng giá chi tiết các dịch vụ nha khoa, yếu tố ảnh hưởng chi phí và cách tiết kiệm khi điều trị răng miệng.',
+      image: images.news.chiphidieutri,
+      date: '2025-06-10',
+      category: 'Chi phí',
+      content: `
+        <h2>Chi phí các dịch vụ nha khoa: Bảng giá chi tiết và lời khuyên tiết kiệm</h2>
+        <p>Bạn đang tìm hiểu <b>chi phí nha khoa</b> để chuẩn bị ngân sách điều trị? Bài viết này sẽ cung cấp <b>bảng giá nha khoa</b> chi tiết và những lời khuyên hữu ích giúp bạn tiết kiệm chi phí khi chăm sóc răng miệng.</p>
+        
+        <h3>Bảng giá chi tiết các dịch vụ nha khoa phổ biến</h3>
+        <ul>
+          <li><b>Khám và tư vấn răng miệng:</b> Miễn phí</li>
+          <li><b>Lấy cao răng, đánh bóng răng:</b> 200,000 - 300,000 VNĐ</li>
+          <li><b>Trám răng thẩm mỹ:</b> 300,000 - 500,000 VNĐ/răng</li>
+          <li><b>Điều trị tủy răng:</b> 800,000 - 1,500,000 VNĐ/răng</li>
+          <li><b>Tẩy trắng răng tại phòng khám:</b> 1,500,000 - 2,500,000 VNĐ</li>
+          <li><b>Tẩy trắng răng tại nhà:</b> 800,000 - 1,200,000 VNĐ</li>
+          <li><b>Niềng răng mắc cài kim loại:</b> 15,000,000 - 25,000,000 VNĐ</li>
+          <li><b>Niềng răng mắc cài sứ:</b> 25,000,000 - 35,000,000 VNĐ</li>
+          <li><b>Niềng răng trong suốt (Invisalign):</b> 40,000,000 - 60,000,000 VNĐ</li>
+          <li><b>Cấy ghép Implant:</b> 20,000,000 - 40,000,000 VNĐ/răng</li>
+          <li><b>Bọc răng sứ thẩm mỹ:</b> 2,000,000 - 5,000,000 VNĐ/răng</li>
+          <li><b>Nhổ răng khôn:</b> 1,000,000 - 3,000,000 VNĐ/răng</li>
+        </ul>
+        
+        <h3>Các yếu tố ảnh hưởng đến chi phí nha khoa</h3>
+        <ul>
+          <li><b>Tình trạng răng miệng:</b> Răng bị tổn thương nặng sẽ tốn kém hơn</li>
+          <li><b>Số lượng răng cần điều trị:</b> Điều trị nhiều răng cùng lúc có thể được giảm giá</li>
+          <li><b>Loại vật liệu sử dụng:</b> Vật liệu cao cấp sẽ có giá cao hơn</li>
+          <li><b>Trình độ bác sĩ:</b> Bác sĩ có kinh nghiệm cao thường có mức phí cao hơn</li>
+          <li><b>Cơ sở vật chất:</b> Phòng khám hiện đại với trang thiết bị tiên tiến</li>
+        </ul>
+        
+        <h3>Lời khuyên tiết kiệm chi phí nha khoa</h3>
+        <ul>
+          <li>Khám răng định kỳ để phát hiện sớm vấn đề, tránh chi phí điều trị cao</li>
+          <li>Chăm sóc răng miệng đúng cách tại nhà</li>
+          <li>So sánh giá giữa các phòng khám uy tín</li>
+          <li>Tận dụng chính sách trả góp 0% lãi suất</li>
+          <li>Điều trị nhiều răng cùng lúc để được giảm giá</li>
+          <li>Sử dụng bảo hiểm y tế cho các dịch vụ được chi trả</li>
+        </ul>
+        
+        <h3>Chính sách thanh toán tại Nha khoa Nhật Thanh</h3>
+        <ul>
+          <li>Trả góp 0% lãi suất lên đến 12 tháng</li>
+          <li>Giảm giá cho khách hàng thân thiết</li>
+          <li>Hỗ trợ thanh toán qua thẻ tín dụng</li>
+          <li>Bảo hành dịch vụ theo tiêu chuẩn quốc tế</li>
+        </ul>
+        
+        <h3>Kết luận</h3>
+        <p>Hiểu rõ <b>chi phí nha khoa</b> và các yếu tố ảnh hưởng sẽ giúp bạn lập kế hoạch tài chính hợp lý. Đừng vì tiết kiệm mà chọn phòng khám kém chất lượng, hãy đầu tư cho sức khỏe răng miệng một cách thông minh!</p>
+      `
+    }
   ];

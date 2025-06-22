@@ -4,12 +4,12 @@ const TreatmentProcess = () => {
   return (  
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
+        <div className="mx-auto max-w-2xl text-center">
      <h2 className="text-base font-semibold leading-7 text-primary-600">Quy trình điều trị</h2>
      <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
        Hành trình đến với nụ cười hoàn hảo
      </p>
-     <p className="mt-6 text-lg leading-8 text-gray-600">
+     <p className="mt-6 text-sm lg:text-lg leading-8 text-gray-600">
        Quy trình điều trị chuẩn quốc tế, đảm bảo an toàn và hiệu quả tối đa cho khách hàng.
      </p>
    </div>
